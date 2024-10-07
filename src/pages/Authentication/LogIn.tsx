@@ -15,7 +15,7 @@ const Login: React.FC<LoginProps> = ({ setLoading }) => {
     username: Yup.string().required('Username is required'),
     password: Yup.string().required('Password is required'),
   });
-
+/*
   const handleLogin = async (values: { username: string; password: string }) => {
     setLoading(true);
     const { username, password } = values;
@@ -40,7 +40,7 @@ const Login: React.FC<LoginProps> = ({ setLoading }) => {
     } finally {
       setLoading(false);
     }
-  };/*
+  };*/
   const handleLogin = async (values: { username: string; password: string }) => {
     setLoading(true);
     const { username, password } = values;
@@ -52,7 +52,7 @@ const Login: React.FC<LoginProps> = ({ setLoading }) => {
       setLoginError('Invalid username or password');
     }
     setLoading(false);
-  };*/
+  };
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-purple-500 to-indigo-600 p-6">
